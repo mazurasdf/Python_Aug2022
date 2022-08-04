@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    repeated word: {{word}}
+    
+    {% if times < 10 %}
+        <h1>that's not a lot</h1>
+        <h1>more if!</h1>
+    {% elif times < 20 %}
+        <h1>BETWEEN 10 and 20</h1>
+    {% else %}
+        <h1>ok that's kind of a lot</h1>
+    {% endif %}
+
+    {% for i in range(times) %}
+        <h1>word is {{word}}</h1>
+    {% endfor %}
+
+    <h1>this will always show up!</h1>
+
+</body>
+</html>
