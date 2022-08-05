@@ -22,11 +22,11 @@ def main_page():
     if "user_name" not in session:
         return redirect("/")
     test_data = [
-        {"poster":"mike","take":"the first avengers movie is the worst mcu movie"},
-        {"poster":"ian","take":"ketchup on pizza is good"},
-        {"poster":"kevin","take":"water is not wet"},
-        {"poster":"julio","take":"billie eilish is overrated!!"},
-        {"poster":"mike","take":"last of us 2 is good"}
+        {"poster":"mike","take":"the first avengers movie is the worst mcu movie","votes":200},
+        {"poster":"ian","take":"ketchup on pizza is good","votes":99},
+        {"poster":"kevin","take":"water is not wet","votes":1},
+        {"poster":"julio","take":"billie eilish is overrated!!","votes":101},
+        {"poster":"mike","take":"last of us 2 is good","votes":100}
     ]
     return render_template("main.html",takes=test_data)
 
